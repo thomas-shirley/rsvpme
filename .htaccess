@@ -1,0 +1,7 @@
+#Apache rewrite rules to make URLS neater
+RewriteEngine on
+RewriteRule ^.*rsvp.*$ /src/rsvp.php [L]
+RewriteRule ^.*admin.*$ /src/admin.php [L]
+RewriteRule ^.*updates.*$ /src/updates.php [L]
+RewriteRule ^.*login.*$ /src/login.php [L]
+

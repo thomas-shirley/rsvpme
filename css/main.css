@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Alexander Lettering';
+  src: url('../fonts/AlexanderLettering.woff2') format('woff2'),
+      url('../fonts/AlexanderLettering.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.alexander-lettering {
+  font-family: 'Alexander Lettering';
+}
+.jumbo-text {
+  font-size: 20vw;
+}
+@keyframes fade {
+    0% {
+  opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+  .z2 {
+    position: relative;
+    z-index: 2;;
+  }
+
+  .z3 {
+    z-index: 3;
+    left: 0;
+    top:0;
+  }
+
+.bg-faint-gold {
+    background: #fcf4f4;
+}
+
+.playfair {
+    font-family: 'Playfair Display', serif;
+}
+.inter {
+    font-family: 'Inter', sans-serif;
+}
+.noto {
+font-family: 'Noto Serif Display', serif;
+}
+
+.fade-in-delayed {
+  opacity: 0;
+  animation: fade 300ms ease-in-out;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
+}
+
+
+.w-1px {
+    background-color: #ececec;
+    width: 1px;
+}
+
+.z-0 {
+    z-index: 0;
+}
+.z-1 {
+    z-index: 2;
+}
+
+.rsvp-2 {
+    background-color: #C9E8C4;
+    border: 1px solid #82C975;
+}
+.rsvp-1 {
+    background-color: #FFCEB7;
+    border: 1px solid #F1D3C5;
+}
+.rsvp-0 {
+    background-color: #FF8686;
+    border: 1px solid #FF3333;
+}
+.active {
+    background-color: #C9E8C4;
+    border: 1px solid #82C975;
+}
+.mid-active {
+    background-color: #FFCEB7;
+    border: 1px solid #F1D3C5;
+}
+.inactive {
+    background-color: #FF8686;
+    border: 1px solid #FF3333;
+}
+
+.charcoal-wedding {
+    color: #303030;
+}
+

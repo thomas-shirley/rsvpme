@@ -1,0 +1,6 @@
+These are the nginx rewrite rules. Add these into your server block, exactly as they appear here
+rewrite ^.*/rsvp/.*$ /src/rsvp.php last;
+rewrite ^.*/admin/.*$ /src/admin.php last;
+rewrite ^.*/updates/.*$ /src/updates.php last;
+rewrite ^.*/login/.*$ /src/login.php last;
+
