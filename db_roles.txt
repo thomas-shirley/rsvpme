@@ -1,0 +1,11 @@
+CREATE TABLE guests (
+    id SERIAL UNIQUE PRIMARY KEY NOT NULL,
+    guest_email_address varchar(80),
+    guest_rsvp_number varchar(80),
+    guest_rsvp_confirmed boolean,
+    created_date DATE DEFAULT NOW() NOT NULL 
+    guest_attending int,
+    guest_invited_total int,
+    guest_name varchar(80),
+);
+
