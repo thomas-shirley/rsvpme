@@ -4,7 +4,7 @@
 <h1>
 <p align="center">
   <img src="na" alt="Logo" width="140" height="110">
-  <br>RSVPME
+  <br>RSVPMe
 </h1>
   <p align="center">
     Web application to send, track and manage RSVPs to your wedding. Easily deployed.
@@ -24,7 +24,7 @@
 </p>                                                                                                                             
       
 ## About The Project
-RSVPME is a compact, dynamic and fun way for you to manage RSVPs to a wedding. It is easily deployed on a server and has few overheads. It supports unique URL generation for your guests, with tailored invitations. Running the start-up.sh script will dynamically configure the application so you can get running without too much hassle.
+RSVPMe is a compact, dynamic and fun way for you to manage RSVPs to a wedding. It is easily deployed on a server and has few overheads. It supports unique URL generation for your guests, with tailored invitations. 
 
 It handles RSVP for both single and double invitees. 
 
