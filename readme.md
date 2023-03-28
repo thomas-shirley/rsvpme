@@ -25,7 +25,12 @@
 ## About The Project
 RSVPMe is a compact, dynamic and fun way for you to manage RSVPs to a wedding. It is easily deployed on a server and has few overheads. It supports unique URL generation for your guests, with tailored invitations. 
 
-It handles RSVP for both single and double invitees. 
+It handles:
+ - Creates a unique RSVP URL for each of your invitees 
+ - Allows guests to RSVP for none, one or two
+ - Alows you to watch in real time RSVPs on the dashboard
+ - Easily generate many unique URLs at once, by pasting your data straight in
+ - It handles RSVP for both single and double invitees. 
 
 It uses:
  - PostGresDB
@@ -34,7 +39,7 @@ It uses:
  - Tachyons CSS framework
 
 
- It also includes rudimentary login/ authentication. 
+ It also includes rudimentary login/ authentication for the admin and link generation.
 
 ## Prerequisites
  - PostgreSQL DB 
