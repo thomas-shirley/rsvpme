@@ -12,9 +12,9 @@
 </p>
 <p align="center">
   <a href="#about-the-project">About The Project</a> •
-  <a href="#usage">How To Use</a> •
-  <a href="#how-it-works">How it works</a> •
-  <a href="#get-started">Get Started</a> •
+  <a href="#Prerequisites-and-installation">Prerequisites and installation</a> 
+  <!-- <a href="#how-it-works">How it works</a> • -->
+  <!-- <a href="#get-started">Get Started</a> • -->
 </p>  
 
 <p align="center">
@@ -41,7 +41,7 @@ It uses:
 
  It also includes rudimentary login/ authentication for the admin and link generation.
 
-## Prerequisites
+## Prerequisites and installation
  - PostgreSQL DB 
  - Apache or NginX (rewrite rules included for both - but you'll need to update your NGINX server blocks if using NginX)
 
