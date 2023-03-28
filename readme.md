@@ -19,7 +19,7 @@
 
 <p align="center">
 
-![screenshot](images/screenshot.png)
+![screenshot](images/screenshot.jpg)
 <p>                                                                                                                             
       
 ## About The Project

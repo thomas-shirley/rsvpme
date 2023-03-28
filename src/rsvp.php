@@ -47,7 +47,7 @@
 
     <div class="pa2 pt4 pb0 z2">
       <h1 class="mw7 tc noto f-headline-l f fw1 pa0 tracked-tight mv0 pv0"><?php echo $WEDDING_DATE ?></h1>
-      <h1 class="alexander-lettering mw7 tc jumbo-text fw1 pa0 tracked-tight mv0 pv0"><?php echo $WEDDING_NAME ?></h1>
+      <h1 class="alexander-lettering mw7 tc jumbo-text fw1 pa0 tracked-tight mv0 pv0"><?php echo $WEDDING_NAME ?>'s Wedding</h1>
       <p v-if="$store.state.guestRSVP != true" class="inter tc mw6 w-80 center f5 lh-copy charcoal-wedding mb3 mt3 fw4 relative">{{$store.state.guestName}} — we would be thrilled for you to join us for our wedding.</p>      
       <p class="inter f5 lh-copy charcoal-wedding mb4 mt1 underline relative"><?php echo $WEDDING_VENUE ?>
       
