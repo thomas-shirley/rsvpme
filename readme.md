@@ -20,7 +20,7 @@
 
 <p align="center">
   
-<!-- ![screenshot](img/clip.gif) -->
+![screenshot](img/screenshot.png)
 </p>                                                                                                                             
       
 ## About The Project
