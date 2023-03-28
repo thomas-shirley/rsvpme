@@ -3,7 +3,6 @@
 <br />
 <h1>
 <p align="center">
-  <img src="na" alt="Logo" width="140" height="110">
   <br>RSVPMe
 </h1>
   <p align="center">
@@ -19,9 +18,9 @@
 </p>  
 
 <p align="center">
-  
+
 ![screenshot](images/screenshot.png)
-</p>                                                                                                                             
+<p>                                                                                                                             
       
 ## About The Project
 RSVPMe is a compact, dynamic and fun way for you to manage RSVPs to a wedding. It is easily deployed on a server and has few overheads. It supports unique URL generation for your guests, with tailored invitations. 
@@ -105,3 +104,8 @@ $RSVP_TEMPLATE  = 1;
 ```
 
 That's it! No more config required. Deploy to your server. Point your browser to /src/login.php, sign in and begin generating rsvp URLs.
+
+You can adapt the ```rsvp.php``` file as much as you like, to suit your desired design.
+
+
+– Thomas
