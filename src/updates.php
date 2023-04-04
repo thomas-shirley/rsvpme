@@ -172,6 +172,7 @@ const app = new Vue({
         }
     },
     mounted :()=>{
+        store.dispatch("FETCH_GUESTS");
         setInterval(() => {
             store.dispatch("FETCH_GUESTS");
         }, 3000);
