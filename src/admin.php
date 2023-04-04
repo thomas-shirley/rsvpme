@@ -29,10 +29,10 @@ else {
         <div class="flex flex-column bg-near-white pa3 br3">
             
             <!-- <p class="pt0 mt0">Guest names, Guest E-mail, Guest total</p> -->
-            <textarea class="ba b--black-30 br2 ph2 pv3" rows="6" @input="forcerender" v-model="$store.state.currentList" placeholder="Emily & Maria, emily@gmail.com, 2"></textarea>
+            <textarea class="ba b--black-30 br3 ph2 pv3" rows="6" @input="forcerender" v-model="$store.state.currentList" placeholder="Emily & Maria, emily@gmail.com, 2"></textarea>
             <div class="mv3 flex flex-row justify-between items-center">
             <p class="pv0 mt0 mb2 f6 gray">Enter comma separated values: Guest names, email, invitees</p>
-                <button class="pv2 ph3 br3 ba b--black-30 bg no-underline bg-white o-70 glow black pointer" @click="importListFromText($store.state.currentList)">Add</button>
+                <button class="pv2 mv0 ph3 br3 ba b--black-30 bg no-underline bg-white o-70 glow black pointer" @click="importListFromText($store.state.currentList)">Add</button>
                 <!-- <button v-if="$store.state.newList.length" class="bg-white mv1 sans-serif bw1 pa2 b--black-10 br3" @click="generateIDs">Generate</button> -->
             </div>
         </div>
