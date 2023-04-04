@@ -29,7 +29,7 @@ It handles:
  - Creates a unique RSVP URL for each of your invitees 
  - Allows guests to RSVP for none, one or two
  - Alows you to watch in real time RSVPs on the dashboard
- - Easily generate many unique URLs at once, by pasting your data straight in
+ - Easily generate many unique URLs at once, by pasting your guest list straight in
  - It handles RSVP for both single and double invitees. 
 
 It uses:

@@ -22,18 +22,24 @@ if (!isset($_SESSION['priviledges_level']) || $_SESSION['priviledges_level'] != 
 
         <h1>RSVP Status</h1>
         <div class="flex flex-row items-center">
-        <a href="/src/admin.php" class="pv2 ph3 br3 ba b--black-10 bg no-underline bg-near-white o-70 glow black mr3">← Get links</a>
+        <a href="/src/admin.php" class="pv2 ph3 br3 ba b--black-10 bg no-underline bg-near-white o-70 glow black mr3">→ Get links</a>
         <div class="loading-blip "></div>
         </div>
     </main>
-    <div class="bg-near-white  w-100 mv3 br3 ph3-l ph3-m ph1 flex flex-column items-start">
-        <div class="flex flex-row items-center">
-            <h3 class="pr3">Total invited: </h3>
-            <h3 class="br bw1 pr3" v-if="$store.state.currentList != ''">{{totalCountInvited}}</h3>
+    <div class=" bg-near-white w-100 mv3 br3 ph3-l ph3-m ph1 flex flex-row">
+        <div class="flex flex-row justify-between w-100">
+        <div class="flex flex-row">
+        <h3 class="pr3">Total invited: </h3>
+        <h3 class=" bw1 pr3" v-if="$store.state.currentList != ''">{{totalCountInvited}}</h3>
+        </div>
+        <div class="flex flex-row">
         <h3 class="ph3">Confirmed Guests: </h3>
-        <h3 class="br bw1 pr3" v-if="$store.state.currentList != ''">{{totalCount}}</h3>
+        <h3 class=" bw1 pr3" v-if="$store.state.currentList != ''">{{totalCount}}</h3>
+        </div>
+        <div class="flex flex-row">
         <h3 class="ph3">RSVPs Outstanding: </h3>
         <h3 v-if="$store.state.currentList != ''">{{outstandingRSVPs}}</h3>
+        </div>
         </div>
 
         <div class="flex flex-row items-center">
@@ -41,7 +47,7 @@ if (!isset($_SESSION['priviledges_level']) || $_SESSION['priviledges_level'] != 
         </div>
     </div>
     <section>
-        <div class="flex flex-row ph3-l ph3-m ph1 " >
+        <div class="flex flex-row pl2 w-100" >
             <table class="w-100"> 
                 <thead>
                     <tr>
