@@ -17,50 +17,50 @@ else {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/tachyons.css"/>
 	<link rel="stylesheet" href="../css/main.css" />
-    <title>RSVPME - Generate Links</title>
+    <title>RSVPME - create Links</title>
 </head>
 <body>
 <section id="app" class="center w-60-l w-70-m w-100 mw-60-l pa4 sans-serif">
     <main>
         <div class="flex flex-row justify-between items-center">
-        <h1>Add guests and generate links</h1>
-        <a href="/src/updates.php" class="pv2 ph3 br3 ba b--black-10 bg no-underline bg-near-white o-70 glow black">See live resuts</a>
+        <h1>Add guests and create links</h1>
+        <a href="/src/updates.php" class="pv2 ph3 br3 ba b--black-10 bg no-underline bg-near-white o-70 glow black">← See live resuts</a>
         </div>
-        <div class="flex flex-column">
-            <p class="pv0 mt0 mb2 f6 gray">Enter comma separated values as:</p>
-            <p class="pt0 mt0">Guest names, Guest E-mail, Guest total</p>
-            <textarea class="ba b--black-30 br2"rows="10" @input="forcerender" v-model="$store.state.currentList"></textarea>
-            <div class="mv3">
-                <button class="bg-white mv1 sans-serif bw1 pa2 b--black-10 br3" @click="importListFromText($store.state.currentList)">Generate Links</button>
+        <div class="flex flex-column bg-near-white pa3 br3">
+            
+            <!-- <p class="pt0 mt0">Guest names, Guest E-mail, Guest total</p> -->
+            <textarea class="ba b--black-30 br2 ph2 pv3" rows="6" @input="forcerender" v-model="$store.state.currentList" placeholder="Emily & Maria, emily@gmail.com, 2"></textarea>
+            <div class="mv3 flex flex-row justify-between items-center">
+            <p class="pv0 mt0 mb2 f6 gray">Enter comma separated values: Guest names, email, invitees</p>
+                <button class="pv2 ph3 br3 ba b--black-30 bg no-underline bg-white o-70 glow black pointer" @click="importListFromText($store.state.currentList)">Add</button>
                 <!-- <button v-if="$store.state.newList.length" class="bg-white mv1 sans-serif bw1 pa2 b--black-10 br3" @click="generateIDs">Generate</button> -->
             </div>
         </div>
-        <div>
-            <div class="flex flex-row">
-            <p class="fw5 pr2">Total e-mails:</p>
-            <p v-text="$store.state.existingList.length"></p>
-            </div>
-        </div>
+
     </main>
 
-    <div class="flex flex-row  " >
+    <div class="flex flex-row pa3 " >
         <div class="w-100">
-                <div class="flex flex-row">
-                    <p class="fw6 bb b--black-20 tl pb3 pr3 bg-white">Name</p>
-                    <p class="fw6 bb b--black-20 tl pb3 pr3 bg-white">Link</p>
+                <div class="flex flex-row justify-between w-100">
+                    <p class="w-30-l w-100 fw6 b--black-20 tl pb3 pr3 bg-white">Name</p>
+                    <p class="w-50-l w-100 fw6 b--black-20 tl pb3 pl3 bg-white">Link</p>
                     <!-- <p class="fw6 bb b--black-20 tl pb3 pr3 bg-white">Email</p> -->
-                    <p class="fw6 bb b--black-20 tc pb3 pr3 bg-white">Total Invited</p>
-                    
+                    <p class="fw6 tr pb3 pl3 bg-white">Total Invited</p>      
                 </div>
             
             <div class="bb mv2 pv2 b--black-20 flex flex-row-ns flex-column justify-between" v-if="$store.state.existingList.length > 0" v-for="item, index in $store.state.existingList">
             <p class="pv2-l f6 pv0 mv0 pr3 w-30-l">{{item.guest_name}}</p>
-            <p class="pv2-l pv0 mv2 f6 pr3 blue w-50-l w-100"><a v-bind:href="rsvpUrlRender(item.guest_rsvp_number)" v-text="rsvpUrlRender(item.guest_rsvp_number)"></a></p>
+            <p class="pv2-l pv0 mv2 f6 blue w-50-l w-100"><a v-bind:href="rsvpUrlRender(item.guest_rsvp_number)" v-text="rsvpUrlRender(item.guest_rsvp_number)"></a></p>
             <!-- <p class="pv2 pr3 ">{{item.guest_email_address}}</p> -->
-            <p class="pv2-l f6 pv0 mv0 pr3 ">{{item.guest_invited_total}} invitees</p>
-            
+            <p class="pv2-l f6 pv0 mv0 pl3 ">{{item.guest_invited_total}} invitees</p>
             </div>
+        </div>
     </div>
+    <div>
+            <div class="flex flex-row justify-center o-30 i">
+            <p class="fw5 pr2">Total links created:</p>
+            <p v-text="$store.state.existingList.length"></p>
+            </div>
         </div>
 
 </section>
